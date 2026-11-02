@@ -1,4 +1,3 @@
-import numpy as np
 from tensorflow.keras import Sequential
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras.layers import Dense, Input, LSTM, Dropout

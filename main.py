@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -172,4 +171,3 @@ with model_tab:
     errors = predictions.assign(error=lambda frame: frame["actual"] - frame["predicted"])
     st.line_chart(errors.tail(chart_points).set_index("date_time")["error"])
     st.caption("Lower MAE, RMSE and MAPE are better. Higher R² is better.")
-
